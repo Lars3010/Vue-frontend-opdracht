@@ -75,7 +75,6 @@ export default {
         margin-bottom: 30px;
         padding: 25px;
         list-style: none;
-        font-family: Arial, Helvetica, sans-serif;
         display: flex;
         flex-direction: column;
         min-width: 300px;

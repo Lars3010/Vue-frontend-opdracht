@@ -8,9 +8,10 @@
 </head>
 <body>
     <div id="app">
-        <ul class="content">
+        <ul v-if="!error" class="content">
             <list v-for="client in clients" :key="client.id.value" :client="client"></list>
         </ul>
+        <span class="error" v-else>No Data Found</span>
     </div>
     <script src="./dist/app.js"></script>
 </body>
