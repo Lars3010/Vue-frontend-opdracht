@@ -1,7 +1,7 @@
 <template>
     <li class="person">
         <label for="name">Name:</label>
-        <input v-if="edit" type="text" v-model="formattedName" placeholder="Name" name="name">
+        <input v-if="edit" v-focus type="text" v-model="formattedName" placeholder="Name" name="name">
         <p v-else>{{ formattedName }}</p>
 
         <label for="email">Email:</label>
@@ -55,6 +55,14 @@ export default {
                 this.client.location.street.number = adress[adress.length -1];
             }
         },
+    },
+    directives: {
+        //directive to shift focus to first input
+        focus: {
+            inserted: function(el){
+                el.focus();
+            }
+        }
     }
 }
 </script>
