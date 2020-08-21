@@ -7,7 +7,9 @@
 </head>
 <body>
     <div id="app">
-        <list :clientData="clientData"></list>
+        <ul>
+            <list v-for="client in clients" :key="client.id.value" :client="client"></list>
+        </ul>
     </div>
     <script src="./dist/app.js"></script>
 </body>
