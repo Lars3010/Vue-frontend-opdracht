@@ -5,10 +5,18 @@ new Vue({
     el: '#app',
 
     data: {
-        posts: null
+        clientData: null
     },
     
     components: {
         List,
     },
+
+    mounted: function(){
+        fetch('https://randomuser.me/api/')
+            .then(response => response.json())
+            .then(json => this.clientData = json.results)
+            .catch(error => this.clientData = 'No Data Found')
+            
+    }
 })

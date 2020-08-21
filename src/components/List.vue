@@ -6,6 +6,7 @@
 
 <script>
 export default {
- name: 'List'
+    name: 'List',
+    props: ['client'],
 }
 </script>
