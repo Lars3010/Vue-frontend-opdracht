@@ -15,7 +15,7 @@ new Vue({
 
     mounted: function(){
         //fetch 20 random clients
-        fetch('https://randomuser.mes/api/?results=20')
+        fetch('https://randomuser.me/api/?results=20')
             .then(response => response.json())
             .then(json => {
                 this.clients = json.results
