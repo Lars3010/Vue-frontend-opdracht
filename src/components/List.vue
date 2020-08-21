@@ -58,3 +58,53 @@ export default {
     }
 }
 </script>
+
+<style>
+    .person{
+        border: 2px solid #558f63;
+        border-radius: 5px;
+        background-color: white;
+        margin-bottom: 30px;
+        padding: 25px;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+    }
+
+    .person p, .person input {
+        font-size: 1em;
+    }
+
+    .person label{
+        font-weight: bold;
+    }
+
+    .person input{
+        margin-block-start: 0.8em;
+        margin-block-end: 0.8em;
+    }
+
+    .person button{
+        padding: 0.5em;
+        font-size: 1.2em;
+        color: white;
+        background-color: #6eb97f;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .person button:hover{
+        cursor: pointer;
+        background-color: #558f63;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .person button:focus{
+        border: 1px solid #457450;
+    }
+
+
+</style>

@@ -13,7 +13,7 @@ new Vue({
     },
 
     mounted: function(){
-        fetch('https://randomuser.me/api/?results=3')
+        fetch('https://randomuser.me/api/?results=20')
             .then(response => response.json())
             .then(json => {
                 //console.log(json.results)
