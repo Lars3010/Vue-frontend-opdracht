@@ -5,7 +5,7 @@ new Vue({
     el: '#app',
 
     data: {
-        clientData: null
+        clients: null
     },
     
     components: {
@@ -13,10 +13,14 @@ new Vue({
     },
 
     mounted: function(){
-        fetch('https://randomuser.me/api/')
+        fetch('https://randomuser.me/api/?results=3')
             .then(response => response.json())
-            .then(json => this.clientData = json.results)
-            .catch(error => this.clientData = 'No Data Found')
+            .then(json => {
+                //console.log(json.results)
+                this.clients = json.results
+                console.log(this.clients)
+            })
+            .catch(error => this.clients = 'No Data Found')
             
     }
 })
