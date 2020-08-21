@@ -1,5 +1,5 @@
 # Vue-frontend-opdracht
-![preview image]()
+![preview image](https://github.com/Lars3010/Vue-frontend-opdracht/blob/master/public/preview.png)
 Een interview Opdracht voor World of Content.
 
 
